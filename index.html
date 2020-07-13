@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box1 box" id="select">
+            <div class="number">
+                1
+            </div>
+        </div>
+        <div class="box2 box" id="select">
+            <div class="number">
+                2
+            </div>
+        </div>
+        <div class="box3 box" id="select">
+            <div class="number">
+                3
+            </div>
+        </div>
+        <div class="box4 box" id="select">
+            <div class="number">
+                4
+            </div>
+        </div>
+        <div class="box5 box">
+            <div class="number">
+                5
+            </div>
+        </div>
+    </div>
+    <div class="name">
+        <div class="title">
+            <h2>Dhwani RIS Task-2</h2>
+        </div>
+        <div class="side">
+            <h2>Designed by Hemchandhar<i class="fas fa-heart"></i></h2>
+        </div>
+    </div>
+    <script>
+        function hasId(element){
+            return element.id == 'select';
+        }
+        window.addEventListener("click",function(p) {
+            p=p||window.event;
+            var target=p.target || p.srcElement;
+            if(hasId(target) && target.style.zIndex==2){
+                target.style.zIndex =5;
+            }else{
+                target.style.zIndex=2;
+            }
+        })
+    </script>
+    <script src="https://kit.fontawesome.com/566dffd403.js" crossorigin="anonymous"></script>
+</body>
+</html>
